@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "concurrently \"node  ./server/index.js\" \"npm run serve\"",
-    "serve": "vue-cli-service serve --port ",
+    "serve-temp": "vue-cli-service serve --port ",
+    "serve":"http-server dist/",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
@@ -30,6 +31,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
+    "http-server": "^0.12.3",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
   },
