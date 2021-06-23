@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express()
 const axios = require('axios');
-const port = 3001;
+const port = 3010;
 let items = [];
 var sources = [];
 var normalizedPath = require("path").join(__dirname, "scrapers");

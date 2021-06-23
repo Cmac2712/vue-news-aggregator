@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+		"start": "concurrently \"node  ./server/index.js\" \"npm run serve\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -11,6 +12,7 @@
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.5",
+    "concurrently": "^6.2.0",
     "core-js": "^3.6.5",
     "express": "^4.17.1",
     "uuid": "^8.3.2",
