@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-		"start": "concurrently \"node  ./server/index.js\" \"npm run serve\"",
+    "start": "concurrently \"node  ./server/index.js\" \"npm run serve\"",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/cli": "^4.5.13",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.5",
