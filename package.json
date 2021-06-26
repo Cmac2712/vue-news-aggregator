@@ -5,6 +5,7 @@
   "scripts": {
     "start": "concurrently \"node nodemon ./server/index.js\" \"npm run serve\"",
     "serve": "http-server dist/",
+    "serve-api": "node nodemon ./server/index.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
