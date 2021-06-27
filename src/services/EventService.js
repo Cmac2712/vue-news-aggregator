@@ -1,7 +1,8 @@
 import axios from 'axios'
+const port = '5000'
 
 const apiClient = axios.create({
-  baseURL: `http://127.0.0.1:${process.env.PORT || 5000}`,
+  baseURL: `http://127.0.0.1:${port}`,
   withCredentials: false,
   headers: {
     Accept: "application/json",
