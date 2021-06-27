@@ -11,12 +11,9 @@ const apiClient = axios.create({
 
 export default {
   getNewsList() {
-    return apiClient.get("/news")
-            .catch(err => console.log(err));
+    return apiClient.get("/news");
   },
   getNewsArticle(id) {
-    return apiClient.get("/news")
-            .then(response => response.data.find(item => item.id === id) )
-            .catch(err => console.log(err))
+    return apiClient.get("/news").then(response => response.data.find(item => item.id === id) )
   }
 };

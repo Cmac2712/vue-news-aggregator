@@ -3,25 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"node nodemon ./server/index.js\" \"npm run serve\"",
+    "start": "concurrently \"npm run serve-api\" \"npm run serve\"",
     "serve": "http-server dist/",
-    "serve-api": "http-server ./server/index.js",
+    "serve-api": "node ./server/index.js",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/cli": "^4.5.13",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "cheerio": "^1.0.0-rc.5",
     "concurrently": "^6.2.0",
     "core-js": "^3.6.5",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.7",
     "uuid": "^8.3.2",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0-0",
-    "@vue/cli": "^4.5.13",
-    "http-server": "^0.12.3",
-    "nodemon": "^2.0.7"
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.3",
@@ -31,6 +32,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
+    "dotenv-run-script": "^0.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "postcss": "^7.0.35",
