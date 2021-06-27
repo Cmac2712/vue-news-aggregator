@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 let items = [];
 var sources = [];
 var normalizedPath = require("path").join(__dirname, "scrapers");
-const FETCH_INTERVAL = 36000;
+const FETCH_INTERVAL = 60 * 1000 * 60 * 6; // 6 hours
 
 const fetchData = () => {
   console.log('Fetching data...');
